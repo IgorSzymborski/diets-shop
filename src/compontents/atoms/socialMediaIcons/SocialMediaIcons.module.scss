@@ -1,0 +1,12 @@
+@import '/src/styles/mixings';
+
+.button {
+  margin-left: 25px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+
+  @include breakpoints (mobile) {
+    margin: 0 25px;
+  }
+}

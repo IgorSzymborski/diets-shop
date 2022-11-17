@@ -1,0 +1,16 @@
+@import '/src/styles/mixings';
+
+.button {
+  padding: 10px 32px;
+  margin-left: 25px;
+  border-radius: 20px;
+  border: none;
+  color: rgba(0, 0, 0, 0.7);
+  font-size: 14px;
+  cursor: pointer;
+
+  @include breakpoints (mobile) {
+    margin: 10px 0px;
+    width: 200px;
+  }
+}
