@@ -13,4 +13,10 @@
     margin: 10px 0px;
     width: 200px;
   }
+  @include breakpoints (laptop){
+    margin-left: 6px;
+    padding: 10px 16px;
+  
+  }
+
 }

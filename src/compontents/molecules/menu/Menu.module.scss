@@ -23,6 +23,9 @@
       font-size: 18px;
       margin: 0 0 25px 0;
     }
+    @include breakpoints (laptop){
+      margin-right: 20px;
+    }
 
     a {
       text-decoration: none;

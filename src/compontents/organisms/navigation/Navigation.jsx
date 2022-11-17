@@ -10,7 +10,7 @@ import BlackFacebook from '../../../assets/BlackFacebook.png';
 import HamburgerButton from '../../atoms/hamburgerButton/HamburgerButton';
 
 const Navigation = (props) => {
-    const [open, setOpen] = useState(false);
+    const [open, setOpen] = useState(true);
     const toggleMenu = () => {
         setOpen((prevState) => !prevState);
     };
