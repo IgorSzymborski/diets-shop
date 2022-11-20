@@ -1,5 +1,12 @@
 @import '/src/styles/mixings';
 
+.active {
+  @include breakpoints (mobile) {
+    background-color: white;
+    height: 100vh;
+  }
+}
+
 .navigationContainer {
   display: flex;
   justify-content: space-between;

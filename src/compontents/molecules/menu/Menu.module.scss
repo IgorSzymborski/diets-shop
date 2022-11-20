@@ -12,13 +12,13 @@
   }
 
   &__item {
-    margin-right: 32px;
-    font-size: 14px;
-    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-
+    width: 100%;
+    margin-right: 32px;
+    font-size: 14px;
+    
     @include breakpoints (mobile) {
       font-size: 18px;
       margin: 0 0 25px 0;
@@ -27,7 +27,7 @@
       margin-right: 20px;
     }
 
-    a {
+    &__link {
       text-decoration: none;
       color: rgba(0, 0, 0, 0.7);
     }

@@ -8,7 +8,8 @@ const MainTemplate = (props) => {
     return (
         <div className={styles.mainTemplateContainer}>
             <Navigation />
-            {/* <HomePage /> */}
+            <HomePage />
+            
         </div>
     );
 };

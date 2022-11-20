@@ -1,21 +1,5 @@
 @import '/src/styles/mixings';
 
-.homePageContainer {
-  position: absolute;
-  top: 97px;
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  text-align: center;
-  background-color: rgb(158, 158, 134);
-  text-transform: uppercase;
-  font-weight: 900;
-
-  &__tittle {
-    font-size: 130px;
-    color: white;
-    line-height: 120px;
-    padding: 0 200px;
-    
-  }
+.homePageContainer{
+  
 }

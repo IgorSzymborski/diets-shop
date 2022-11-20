@@ -6,27 +6,39 @@ const Menu = (props) => {
     return (
         <ul className={styles.list}>
             <li className={styles.list__item}>
-                <a href="">diety</a>
+                <a className={styles.list__item__link} href="">
+                    diety
+                </a>
                 <div className={styles.list__imte__line}></div>
             </li>
             <li className={styles.list__item}>
-                <a href="">cennik</a>
+                <a className={styles.list__item__link} href="">
+                    cennik
+                </a>
                 <div className={styles.list__item__line}></div>
             </li>
             <li className={styles.list__item}>
-                <a href="">promocje</a>
+                <a className={styles.list__item__link} href="">
+                    promocje
+                </a>
                 <div className={styles.list__item__line}></div>
             </li>
             <li className={styles.list__item}>
-                <a href="">dostawa</a>
+                <a className={styles.list__item__link} href="">
+                    dostawa
+                </a>
                 <div className={styles.list__item__line}></div>
             </li>
             <li className={styles.list__item}>
-                <a href="">blog</a>
+                <a className={styles.list__item__link} href="">
+                    blog
+                </a>
                 <div className={styles.list__item__line}></div>
             </li>
             <li className={styles.list__item}>
-                <a href="">kontakt</a>
+                <a className={styles.list__item__link} href="">
+                    kontakt
+                </a>
                 <div className={styles.list__item__line}></div>
             </li>
         </ul>

@@ -16,7 +16,7 @@ const Navigation = (props) => {
     };
 
     return (
-        <div className={styles.navigationContainer}>
+        <div className={`${styles.navigationContainer} ${open ? styles.active : styles.navigationContainer}`}>
             {open && <Menu toggleMenu={toggleMenu} />}
             <div className={styles.navigationContainer__imgWrapper}>
                 <img src={blackLogo} alt="" />

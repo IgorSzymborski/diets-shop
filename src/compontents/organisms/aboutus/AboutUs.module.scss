@@ -1,0 +1,60 @@
+@import '/src/styles/mixings';
+
+.aboutUsContainer {
+  width: 100%;
+  position: relative;
+  @include breakpoints (mobile){
+    margin-top: 20px;
+  }
+  &__background {
+    width: 100%;
+
+    @include breakpoints (mobile){
+      display: none
+    }
+  }
+
+  &__text {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    max-width: 30%;
+
+    @include breakpoints (mobile){
+      text-align: left;
+      max-width: 100%;
+      right: 5%;
+      left: 5%;
+    }
+
+    @include breakpoints (tablet){
+      max-width: 100%;
+      right: 10%;
+      text-align: center;
+    }
+
+    @include breakpoints (laptop){
+      max-width: 50%;
+    }
+    &__tittle {
+      text-transform: uppercase;
+      font-size: 40px;
+      font-weight: 900;
+      line-height: 48px;
+      margin-bottom: 12px;
+      
+    }
+
+    &__acapit {
+      
+      font-size: 14px;
+      line-height: 24.5px;
+      
+      color: #625847;
+    }
+  }
+}
+
+.orange {
+  color: rgb(255, 181, 38);
+}

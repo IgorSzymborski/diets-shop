@@ -1,0 +1,190 @@
+@import '/src/styles/mixings';
+
+.sliderContainer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  padding-top: 100px;
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(180deg, #F3E9DA 0%, #CFC0A7 100%);
+  @include breakpoints (mobile){
+    height: 75vh;
+  }
+  @include breakpoints (tablet){
+    height: 100vh;
+  }
+
+  &__tittle {
+    width: 100%;
+    text-align: center;
+    font-size: 145px;
+    text-transform: uppercase;
+    font-weight: 900;
+    line-height: 120px;
+    color: #ffffff;
+
+    @include breakpoints(mobile) {
+      font-size: 57px;
+      line-height: 49px;
+    }
+
+    @include breakpoints (tablet) {
+      font-size: 70px;
+      line-height: 65px;
+    }
+
+    @include breakpoints(laptop) {
+      font-size: 112px;
+      line-height: 95px;
+    }
+  }
+
+  &__photoWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    position: absolute;
+    top: 105px;
+    overflow-x: hidden;
+
+    @include breakpoints (mobile) {
+      overflow-x: visible;
+    }
+
+    @include breakpoints (tablet) {
+      overflow-x: visible;
+    }
+
+    &__left {
+      @include breakpoints (mobile) {
+        display: none;
+      }
+
+      @include breakpoints (tablet) {
+        display: none;
+      }
+    }
+
+    &__center {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: relative;
+
+      &__wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+
+        &__leftArrow,
+        &__rightArrow {
+          background-color: transparent;
+          border: none;
+          cursor: pointer;
+
+          @include breakpoints(mobile) {
+            position: absolute;
+            top: 100%;
+          }
+
+          @include breakpoints (tablet) {
+            top: 92%;
+          }
+        }
+
+        &__leftArrow {
+          @include breakpoints(mobile) {
+            left: 10px;
+          }
+
+          @include breakpoints (tablet) {
+            left: 92px;
+          }
+        }
+
+        &__rightArrow {
+          @include breakpoints(mobile) {
+            right: 10px;
+          }
+
+          @include breakpoints (tablet) {
+            right: 92px;
+          }
+        }
+      }
+
+      &__info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        position: absolute;
+        bottom: 40px;
+
+        @include breakpoints(mobile) {
+          top: 55%;
+        }
+
+        @include breakpoints (tablet) {
+          justify-content: center;
+          top: 75%;
+        }
+
+        &__dietName {
+          font-size: 112px;
+          line-height: 96px;
+          font-weight: 900;
+          text-transform: uppercase;
+          color: #ffffff;
+          padding: 20px;
+
+          @include breakpoints(mobile) {
+            font-size: 52px;
+          }
+
+          @include breakpoints (tablet) {
+            font-size: 75px;
+          }
+        }
+
+        &__buttons {
+          display: flex;
+
+          @include breakpoints(mobile) {
+            flex-direction: column;
+          }
+        }
+      }
+    }
+
+    &__right {
+      @include breakpoints (mobile) {
+        display: none;
+      }
+
+      @include breakpoints (tablet) {
+        display: none;
+      }
+    }
+  }
+}
+
+.mobileBreak {
+  display: none;
+
+  @include breakpoints(mobile) {
+    display: block;
+  }
+}
+
+.photo {
+  @include breakpoints(laptop) {}
+
+  @include breakpoints(mobile) {
+    width: 100%;
+  }
+}
