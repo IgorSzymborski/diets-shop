@@ -1,0 +1,54 @@
+@import '/src/styles/mixings';
+
+
+.howItWorksContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 100px 0;
+  width: 100%;
+  @include breakpoints (mobile) {
+    padding-top: 630px;
+  }
+
+  @include breakpoints (tablet) {
+    padding-top: 480px;
+  }
+
+  &__tittle {
+    font-size: 40px;
+    text-transform: uppercase;
+    font-weight: 900;
+    text-align: center;
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    list-style: none;
+    padding-top: 100px;
+    @include breakpoints (mobile) {
+      flex-direction: column;
+      justify-content: space-between;
+
+    }
+
+    @include breakpoints (laptop) {
+      justify-content: space-between;
+      padding-left: 100px;
+      padding-right: 100px;
+    }
+
+    &__item {
+      &__img {
+        width: 100%;
+        @include breakpoints(laptop) {
+          width: 99%;
+        }
+      }
+    }
+  }
+}
