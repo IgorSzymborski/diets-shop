@@ -1,0 +1,93 @@
+@import '/src/styles/mixings';
+
+.rightSideContainer {
+  background-color: #282828;
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+  padding: 70px 120px;
+  @include breakpoints (mobile){
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    // grid-gap: 10px;
+    padding: 30px 40px;
+  }
+
+  @include breakpoints (tablet){
+    grid-template-columns: repeat(3,1fr);
+    padding: 60px 10px 30px 45px;
+  }
+
+  @include breakpoints (laptop) {
+    padding: 60px 10px;
+  }
+
+  &__leftList {
+    list-style: none;
+    @include breakpoints (mobile){
+      padding-right: 20px;
+    }
+    &__tittle {
+      color: white;
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 24.5px;
+    }
+
+    &__item {
+      font-size: 14px;
+      line-height: 21px;
+      margin-top: 15px;
+
+      &__link {
+        color: rgba(255, 255, 255, 0.6);
+        text-decoration: none;
+      }
+    }
+  }
+
+  &__centerList {
+    list-style: none;
+
+    &__tittle {
+      color: white;
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 24.5px;
+    }
+
+    &__item {
+      font-size: 14px;
+      line-height: 21px;
+      margin-top: 15px;
+
+      &__link {
+        color: rgba(255, 255, 255, 0.6);
+        text-decoration: none;
+      }
+    }
+  }
+
+  &__rightList {
+    list-style: none;
+
+    &__tittle {
+      color: white;
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 24.5px;
+    }
+
+    &__item {
+      font-size: 14px;
+      line-height: 21px;
+      margin-top: 15px;
+
+      &__link {
+        color: rgba(255, 255, 255, 0.6);
+        text-decoration: none;
+      }
+    }
+  }
+}

@@ -6,7 +6,7 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  padding: 100px 0;
+  padding: 100px 0 0 0;
   width: 100%;
   @include breakpoints (mobile) {
     padding-top: 630px;
