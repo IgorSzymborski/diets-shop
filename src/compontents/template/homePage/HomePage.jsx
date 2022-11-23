@@ -8,7 +8,6 @@ import HowItWorks from '../../organisms/howItWorks/HowItWorks';
 const HomePage = (props) => {
     return (
         <div className={styles.homePageContainer}>
-            
             <Slider />
             <AboutUs />
             <HowItWorks />

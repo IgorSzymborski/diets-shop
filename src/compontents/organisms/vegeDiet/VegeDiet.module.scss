@@ -1,0 +1,153 @@
+@import '/src/styles/mixings';
+
+.vegeDietContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: top;
+  padding: 0 142px 900px;
+  position: relative;
+  width: 100%;
+  @include breakpoints (mobile) {
+    padding-bottom: 1300px;
+    padding-left: 24px;
+  }
+
+  @include breakpoints (tablet) {
+    padding-bottom: 1300px;
+    padding-left: 24px;
+  }
+
+  @include breakpoints (laptop) {
+    padding-bottom: 930px;
+  }
+
+  &__description {
+    padding-top: 100px;
+    position: absolute;
+    width: 50%;
+    @include breakpoints (mobile) {
+      top: 300px;
+      width: 90%;
+    }
+
+    @include breakpoints (tablet) {
+      top: 580px;
+      width: 90%;
+      padding: 0;
+    }
+
+    &__diet {
+      font-size: 24px;
+      font-weight: 400;
+    }
+
+    &__dietName {
+      font-size: 72px;
+      font-weight: 900;
+      color: #282828;
+      text-transform: uppercase;
+      @include breakpoints (mobile) {
+        font-size: 50px;
+      }
+
+      @include breakpoints (tablet) {
+        font-size: 60px;
+      }
+    }
+
+    &__kcalWrapper {
+      display: flex;
+      flex-wrap: wrap;
+      width: 70%;
+      @include breakpoints (laptop) {
+        width: 60%;
+      }
+
+      &__kcalItem {
+        background-color: white;
+        margin-right: 10px;
+        margin-bottom: 10px;
+        padding: 10px 15px;
+        border-radius: 25px;
+        color: #625847;
+        text-align: center;
+      }
+    }
+
+    &__text {
+      font-size: 14px;
+      line-height: 175%;
+      color: #625847;
+      margin-top: 24px;
+      text-align: left;
+      margin-bottom: 30px;
+      padding-right: 200px;
+      @include breakpoints (mobile) {
+        width: 100%;
+        padding: 0;
+      }
+
+      @include breakpoints (tablet) {
+        padding: 0;
+        max-width: 100%;
+      }
+    }
+
+    &__iconsWrapper {
+      display: flex;
+      margin-bottom: 40px;
+    }
+  }
+
+  &__photosWrapper {
+    padding-left: 100px;
+    width: 100%;
+
+    @include breakpoints (laptop) {
+      padding-top: 50px;
+    }
+
+    &__photoBgc {
+      position: absolute;
+      right: 3%;
+      max-width: 50%;
+      @include breakpoints (mobile) {
+        max-width: 80%;
+        right: 8%;
+      }
+
+      @include breakpoints (tablet) {
+        right: 15%;
+        max-width: 70%;
+        top: 0;
+      }
+
+      @include breakpoints (laptop) {
+        max-width: 39%;
+      }
+    }
+
+    &__photoDiet {
+      max-width: 50%;
+      position: absolute;
+      right: 3%;
+      @include breakpoints (mobile) {
+        max-width: 80%;
+        right: 8%;
+      }
+
+      @include breakpoints (tablet) {
+        right: 15%;
+        max-width: 70%;
+      }
+
+      @include breakpoints (laptop) {
+        max-width: 39%;
+      }
+    }
+  }
+}
+
+.bold {
+  font-weight: 700;
+}

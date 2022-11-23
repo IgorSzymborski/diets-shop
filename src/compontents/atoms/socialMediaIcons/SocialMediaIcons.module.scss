@@ -1,15 +1,15 @@
 @import '/src/styles/mixings';
 
 .button {
-  margin-left: 25px;
+  margin-left: 10px;
   background-color: transparent;
   border: none;
   cursor: pointer;
 
-  @include breakpoints (mobile) {
-    margin: 0 25px;
-  }
-  @include breakpoints (laptop){
-    margin: 0 10px;
-  }
+  // @include breakpoints (mobile) {
+  //   margin: 0 25px;
+  // }
+  // @include breakpoints (laptop){
+  //   margin: 0 10px;
+  // }
 }

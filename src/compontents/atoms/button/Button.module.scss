@@ -2,7 +2,7 @@
 
 .button {
   padding: 10px 32px;
-  margin-left: 25px;
+  
   border-radius: 20px;
   border: none;
   color: rgba(0, 0, 0, 0.7);
@@ -10,12 +10,9 @@
   cursor: pointer;
 
   @include breakpoints (mobile) {
-    margin: 10px 0px;
+    margin-bottom: 15px;
     width: 200px;
   }
-  @include breakpoints (laptop){
-    margin-left: 6px;
-    padding: 10px 16px;
-  }
+  
 
 }

@@ -44,8 +44,8 @@ const Slider = (props) => {
                         <div
                             className={styles.sliderContainer__photoWrapper__center__info__buttons}
                         >
-                            <Button name="zamów online" color="#FFB526" />
-                            <Button name="więcej o diecie" />
+                            <Button name="zamów online" color="#FFB526"/>
+                            <Button name="więcej o diecie"  />
                         </div>
                     </div>
                 </div>

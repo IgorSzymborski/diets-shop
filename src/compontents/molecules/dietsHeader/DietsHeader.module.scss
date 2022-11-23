@@ -1,0 +1,69 @@
+@import '/src/styles/mixings';
+
+.headerContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 100px 300px 20px 300px;
+  border-radius: 0 0 45px 45px;
+  background-color: white;
+  
+  @include breakpoints (mobile) {
+    flex-direction: column;
+    padding: 100px 150px 20px 150px;
+    display: flex;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    padding: 20px;    
+    max-height: 400px;
+    justify-content: flex-start;
+    
+  }
+
+  @include breakpoints (laptop) {
+    padding: 100px 150px 20px 150px;
+  }
+
+  &__link {
+    text-decoration: none;
+    color: rgba(50, 50, 50, 0.6);
+    font-weight: 700;
+    font-size: 14px;
+    @include breakpoints (mobile){
+      margin-top: 20px;
+
+    }
+
+    &__photoContainer {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+
+      &__smallImg {
+        @include breakpoints (mobile) {
+          display: none;
+        }
+      }
+
+      &__mediumImg {
+        @include breakpoints (laptop) {
+          display: none;
+        }
+
+        @include breakpoints (largescreens) {
+          display: none;
+        }
+      }
+
+      &__dietsName {
+        text-transform: uppercase;
+
+      }
+    }
+  }
+}
+
+.headerContainer::-webkit-scrollbar{
+  display: none;
+}

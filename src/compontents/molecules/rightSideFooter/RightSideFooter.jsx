@@ -29,7 +29,7 @@ const RightSideFooter = (props) => {
                 </li>
                 <li className={styles.rightSideContainer__leftList__item}>
                     <a className={styles.rightSideContainer__leftList__item__link} href="">
-                        gluten free
+                        gluten&lactose free
                     </a>
                 </li>
             </ul>

@@ -1,48 +1,51 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styles from '../menu/Menu.module.scss';
+import { Link } from 'react-router-dom';
 
 const Menu = (props) => {
-    return (
-        <ul className={styles.list}>
-            <li className={styles.list__item}>
-                <a className={styles.list__item__link} href="">
-                    diety
-                </a>
-                <div className={styles.list__imte__line}></div>
-            </li>
-            <li className={styles.list__item}>
-                <a className={styles.list__item__link} href="">
-                    cennik
-                </a>
-                <div className={styles.list__item__line}></div>
-            </li>
-            <li className={styles.list__item}>
-                <a className={styles.list__item__link} href="">
-                    promocje
-                </a>
-                <div className={styles.list__item__line}></div>
-            </li>
-            <li className={styles.list__item}>
-                <a className={styles.list__item__link} href="">
-                    dostawa
-                </a>
-                <div className={styles.list__item__line}></div>
-            </li>
-            <li className={styles.list__item}>
-                <a className={styles.list__item__link} href="">
-                    blog
-                </a>
-                <div className={styles.list__item__line}></div>
-            </li>
-            <li className={styles.list__item}>
-                <a className={styles.list__item__link} href="">
-                    kontakt
-                </a>
-                <div className={styles.list__item__line}></div>
-            </li>
-        </ul>
-    );
+  return (
+    <ul className={styles.list}>
+      <li className={styles.list__item}>
+        <Link className={styles.list__item__link} to="Diets">
+          <a className={styles.list__item__link} href="">
+            diety
+          </a>
+        </Link>
+        <div className={styles.list__imte__line}></div>
+      </li>
+      <li className={styles.list__item}>
+        <a className={styles.list__item__link} href="">
+          cennik
+        </a>
+        <div className={styles.list__item__line}></div>
+      </li>
+      <li className={styles.list__item}>
+        <a className={styles.list__item__link} href="">
+          promocje
+        </a>
+        <div className={styles.list__item__line}></div>
+      </li>
+      <li className={styles.list__item}>
+        <a className={styles.list__item__link} href="">
+          dostawa
+        </a>
+        <div className={styles.list__item__line}></div>
+      </li>
+      <li className={styles.list__item}>
+        <a className={styles.list__item__link} href="">
+          blog
+        </a>
+        <div className={styles.list__item__line}></div>
+      </li>
+      <li className={styles.list__item}>
+        <a className={styles.list__item__link} href="">
+          kontakt
+        </a>
+        <div className={styles.list__item__line}></div>
+      </li>
+    </ul>
+  );
 };
 
 Menu.propTypes = {};
