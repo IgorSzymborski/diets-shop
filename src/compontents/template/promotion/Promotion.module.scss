@@ -1,0 +1,95 @@
+@import '/src/styles/mixings';
+
+.promotionContainer {
+  padding-top: 100px;
+
+  &__firstBanner {
+    width: 100%;
+
+    &__imgNormal {
+
+      display: block;
+      width: 100%;
+      @include breakpoints (mobile){
+        display: none;
+      }
+      @include breakpoints (tablet){
+        display: block;
+      }
+    }
+    &__imgMobile{
+      display: blockgi;
+      @include breakpoints (tablet){
+        display: none;
+      }
+      @include breakpoints (laptop){
+        display: none;
+      }
+      @include breakpoints (largescreens){
+        display: none;
+      }
+    }
+  }
+
+  &__secondBanner {
+    position: relative;
+    width: 100%;
+
+    @include breakpoints (mobile){
+      display: none;
+    }
+    &__imgWrapper {
+      width: 100%;
+
+      &__img {
+        width: 100%;
+        display: block;
+       
+      }
+    }
+
+    &__infoWrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      
+
+      position: absolute;
+      top: 20%;
+      left: 15%;
+      z-index: 3;
+      @include breakpoints (tablet){
+        left: 5%;
+      }
+      @include breakpoints (laptop){
+        left: 5%;
+      }
+      &__tittle{
+        font-size: 80px;
+        text-transform: uppercase;
+        color: #FFB526;
+        font-weight: 900;
+        line-height: 120% ;
+        @include breakpoints (tablet){
+          font-size: 50px;
+        }
+      }
+      &__text{
+        font-size: 24px;
+        font-weight: 700;
+        color: #282828;
+        @include breakpoints (tablet){
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
+
+.button{
+  background-color: transparent;
+  border: none;
+  margin-top: 20px;
+  margin-left: 25px;
+  margin-right: 25px;
+}

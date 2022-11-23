@@ -7,11 +7,11 @@ const Menu = (props) => {
   return (
     <ul className={styles.list}>
       <li className={styles.list__item}>
-        <Link className={styles.list__item__link} to="Diets">
-          <a className={styles.list__item__link} href="">
+        
+          <Link className={styles.list__item__link} to="Diets">
             diety
-          </a>
-        </Link>
+          </Link>
+       
         <div className={styles.list__imte__line}></div>
       </li>
       <li className={styles.list__item}>
@@ -21,9 +21,9 @@ const Menu = (props) => {
         <div className={styles.list__item__line}></div>
       </li>
       <li className={styles.list__item}>
-        <a className={styles.list__item__link} href="">
+        <Link className={styles.list__item__link} to="Promotion">
           promocje
-        </a>
+        </Link>
         <div className={styles.list__item__line}></div>
       </li>
       <li className={styles.list__item}>

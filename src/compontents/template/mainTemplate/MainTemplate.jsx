@@ -6,6 +6,7 @@ import HomePage from '../homePage/HomePage';
 import Footer from '../../organisms/footer/Footer';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Diets from '../diets/Diets';
+import Promotion from '../promotion/Promotion';
 
 const MainTemplate = (props) => {
     return (
@@ -15,9 +16,11 @@ const MainTemplate = (props) => {
                 <Routes>
                     <Route path="/" element={<HomePage />} />
                     <Route path="Diets/*" element={<Diets />} />
+                    <Route path="Promotion" element={<Promotion />} />
                 </Routes>
                 <Footer />
             </BrowserRouter>
+            
         </div>
     );
 };
