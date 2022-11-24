@@ -1,0 +1,113 @@
+@import '/src/styles/mixings';
+
+.contactContainer {
+  display: flex;
+  width: 100%;
+  height: 100%;
+@include breakpoints (mobile){
+  flex-direction: column;
+}
+@include breakpoints (tablet){
+  flex-direction: column;
+}
+  &__photoWrapper {
+    width: 50%;
+    height: 100%;
+@include breakpoints (mobile){
+  display: none;
+}
+@include breakpoints (tablet){
+  display: none;
+}
+
+    &__photo {
+      display: block;
+      width: 109%;
+      @include breakpoints (laptop) {
+        width: 120%;
+        height: 120%;
+      }
+    }
+  }
+
+  &__infoWrapper {
+    background-color: #f3e9da;
+    border-radius: 0px 0px 0px 45px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  
+
+    @include breakpoints (laptop) {
+      width: 70%;
+    }
+
+    &__contactDetails {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      flex-direction: column;
+      width: 30%;
+      @include breakpoints (mobile){
+        margin-top: 10px;
+        width: 100%;
+      }
+      @include breakpoints (tablet){
+        margin-top: 10px;
+        width: 100%;
+      }
+
+      @include breakpoints (laptop) {
+        width: 54%;
+
+      }
+
+      &__list {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        &__item {
+          line-height: 24.5px;
+          @include breakpoints (laptop) {
+            font-size: 14px;
+            line-height: 22px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.contactDetailsContainer {
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  border-radius: 0 0 45px 45px;
+  background-color: white;
+  height: 80%;
+  padding-top: 100px;
+  @include breakpoints (mobile){
+   flex-direction: column; 
+   align-items: center;
+   padding-bottom: 100px;
+   width: 100%;
+  }
+  @include breakpoints (tablet){
+   flex-direction: column; 
+   align-items: center;
+   padding-bottom: 100px;
+  }
+}
+
+.bold {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28.8px;
+  
+  @include breakpoints (laptop) {
+    font-size: 20px;
+    line-height: 25px;
+  }
+}

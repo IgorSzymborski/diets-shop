@@ -18,12 +18,13 @@
     width: 100%;
     margin-right: 32px;
     font-size: 14px;
-    
+
     @include breakpoints (mobile) {
       font-size: 18px;
       margin: 0 0 25px 0;
     }
-    @include breakpoints (laptop){
+
+    @include breakpoints (laptop) {
       margin-right: 15px;
     }
 
@@ -34,7 +35,7 @@
 
     &__line {
       display: none;
-      
+
       @include breakpoints (mobile) {
         display: block;
         width: 100%;

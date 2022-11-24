@@ -7,25 +7,30 @@
     width: 100%;
 
     &__imgNormal {
-
       display: block;
       width: 100%;
-      @include breakpoints (mobile){
+
+      @include breakpoints (mobile) {
         display: none;
       }
-      @include breakpoints (tablet){
+
+      @include breakpoints (tablet) {
         display: block;
       }
     }
-    &__imgMobile{
-      display: blockgi;
-      @include breakpoints (tablet){
+
+    &__imgMobile {
+      display: blockgicd;
+
+      @include breakpoints (tablet) {
         display: none;
       }
-      @include breakpoints (laptop){
+
+      @include breakpoints (laptop) {
         display: none;
       }
-      @include breakpoints (largescreens){
+
+      @include breakpoints (largescreens) {
         display: none;
       }
     }
@@ -35,16 +40,16 @@
     position: relative;
     width: 100%;
 
-    @include breakpoints (mobile){
+    @include breakpoints (mobile) {
       display: none;
     }
+
     &__imgWrapper {
       width: 100%;
 
       &__img {
         width: 100%;
         display: block;
-       
       }
     }
 
@@ -52,33 +57,37 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      
-
       position: absolute;
       top: 20%;
       left: 15%;
       z-index: 3;
-      @include breakpoints (tablet){
+
+      @include breakpoints (tablet) {
         left: 5%;
       }
-      @include breakpoints (laptop){
+
+      @include breakpoints (laptop) {
         left: 5%;
       }
-      &__tittle{
+
+      &__tittle {
         font-size: 80px;
         text-transform: uppercase;
         color: #FFB526;
         font-weight: 900;
-        line-height: 120% ;
-        @include breakpoints (tablet){
+        line-height: 120%;
+
+        @include breakpoints (tablet) {
           font-size: 50px;
         }
       }
-      &__text{
+
+      &__text {
         font-size: 24px;
         font-weight: 700;
         color: #282828;
-        @include breakpoints (tablet){
+
+        @include breakpoints (tablet) {
           font-size: 14px;
         }
       }
@@ -86,7 +95,7 @@
   }
 }
 
-.button{
+.button {
   background-color: transparent;
   border: none;
   margin-top: 20px;

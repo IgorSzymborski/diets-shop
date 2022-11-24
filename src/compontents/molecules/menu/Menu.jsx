@@ -39,9 +39,9 @@ const Menu = (props) => {
         <div className={styles.list__item__line}></div>
       </li>
       <li className={styles.list__item}>
-        <a className={styles.list__item__link} href="">
+        <Link className={styles.list__item__link} to="Contact">
           kontakt
-        </a>
+        </Link>
         <div className={styles.list__item__line}></div>
       </li>
     </ul>

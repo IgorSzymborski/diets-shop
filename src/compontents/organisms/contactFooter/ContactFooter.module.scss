@@ -1,0 +1,44 @@
+@import '/src/styles/mixings';
+
+.contactFooterContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 20%;
+  @include breakpoints (mobile) {
+    flex-direction: column;
+    height: 30vh;
+    align-items: center;
+  }
+
+  @include breakpoints (tablet) {
+    flex-direction: column;
+    height: 30vh;
+    align-items: center;
+  }
+
+  &__list {
+    list-style: none;
+    @include breakpoints (mobile) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    @include breakpoints (tablet) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &__item {
+      line-height: 175%;
+      font-size: 14px;
+      color: #282828;
+    }
+  }
+}
+
+.bold {
+  font-weight: 900;
+}

@@ -24,7 +24,6 @@
     font-weight: 900;
     line-height: 120px;
     color: #ffffff;
-
     @include breakpoints(mobile) {
       font-size: 57px;
       line-height: 49px;
@@ -49,7 +48,6 @@
     position: absolute;
     top: 105px;
     overflow-x: hidden;
-
     @include breakpoints (mobile) {
       overflow-x: visible;
     }

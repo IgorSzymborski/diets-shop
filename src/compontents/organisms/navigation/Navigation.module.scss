@@ -15,7 +15,6 @@
   position: fixed;
   width: 100%;
   z-index: 4;
-
   @include breakpoints (mobile) {
     flex-direction: column;
   }
@@ -33,13 +32,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
-
     @include breakpoints (mobile) {
       flex-direction: column;
       width: 100%;
     }
 
-    
     &__link {
       
       @include breakpoints (mobile) {

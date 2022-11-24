@@ -33,7 +33,6 @@
     @include breakpoints (mobile) {
       flex-direction: column;
       justify-content: space-between;
-
     }
 
     @include breakpoints (laptop) {

@@ -2,14 +2,7 @@
 
 .footerContainer {
   display: flex;
-  
-  
-  
   @include breakpoints (mobile){
     flex-direction: column;
   }
-
-
-
-  
 }

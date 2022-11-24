@@ -8,7 +8,6 @@
   }
   &__background {
     width: 100%;
-
     @include breakpoints (mobile){
       display: none
     }
@@ -42,14 +41,11 @@
       font-weight: 900;
       line-height: 48px;
       margin-bottom: 12px;
-      
     }
 
     &__acapit {
-      
       font-size: 14px;
       line-height: 24.5px;
-      
       color: #625847;
     }
   }
