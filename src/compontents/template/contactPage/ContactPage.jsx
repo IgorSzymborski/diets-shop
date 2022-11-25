@@ -1,12 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import styles from './Contact.module.scss';
+import styles from './ContactPage.module.scss';
 import womanImg from '../../../assets/womanContact.png';
 import phoneIcons from '../../../assets/contactPhoneIcons.png';
 import mailIcons from '../../../assets/contactMailIcons.png';
 import ContactFooter from '../../organisms/contactFooter/ContactFooter';
 
-const Contact = (props) => {
+const ContactPage = (props) => {
   return (
     <div className={styles.contactContainer}>
       <div className={styles.contactContainer__photoWrapper}>
@@ -52,6 +52,6 @@ const Contact = (props) => {
   );
 };
 
-Contact.propTypes = {};
+ContactPage.propTypes = {};
 
-export default Contact;
+export default ContactPage;

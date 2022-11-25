@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import styles from './Promotion.module.scss';
+import styles from './PromotionPage.module.scss';
 import firstBanner from '../../../assets/promotionBannerBig1.png';
 import secondBanner from '../../../assets/promotionBannerBig2.png';
 import SocialMediaIcons from '../../atoms/socialMediaIcons/SocialMediaIcons';
@@ -10,7 +10,7 @@ import firstMobileBanner from '../../../assets/promotionBanerMobile1.png';
 
 
 
-const Promotion = (props) => {
+const PromotionPage = (props) => {
   return (
     <div className={styles.promotionContainer}>
       <div className={styles.promotionContainer__firstBanner}>
@@ -40,6 +40,6 @@ const Promotion = (props) => {
   );
 };
 
-Promotion.propTypes = {};
+PromotionPage.propTypes = {};
 
-export default Promotion;
+export default PromotionPage;

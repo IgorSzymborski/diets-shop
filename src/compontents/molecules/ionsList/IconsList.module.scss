@@ -1,0 +1,42 @@
+@import '/src/styles/mixings';
+
+.list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  list-style: none;
+  position: absolute;
+  top: 50%;
+  padding: 0 400px;
+
+  @include breakpoints (mobile) {
+    top: 45%;
+    padding: 0 20px;
+    align-items: flex-start;
+  }
+
+  @include breakpoints (tablet) {
+    top: 45%;
+    padding: 0 50px;
+    justify-content: space-around;
+  }
+
+  @include breakpoints (laptop) {
+    top: 50%;
+    padding: 0 250px;
+  }
+
+  &__item {
+    &__container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      &__text {
+        text-align: center;
+      }
+    }
+  }
+}
