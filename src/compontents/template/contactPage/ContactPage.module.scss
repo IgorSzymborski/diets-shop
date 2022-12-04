@@ -4,25 +4,31 @@
   display: flex;
   width: 100%;
   height: 100%;
-@include breakpoints (mobile){
-  flex-direction: column;
-}
-@include breakpoints (tablet){
-  flex-direction: column;
-}
+
+  @include breakpoints (mobile) {
+    flex-direction: column;
+  }
+
+  @include breakpoints (tablet) {
+    flex-direction: column;
+  }
+
   &__photoWrapper {
     width: 50%;
     height: 100%;
-@include breakpoints (mobile){
-  display: none;
-}
-@include breakpoints (tablet){
-  display: none;
-}
+
+    @include breakpoints (mobile) {
+      display: none;
+    }
+
+    @include breakpoints (tablet) {
+      display: none;
+    }
 
     &__photo {
       display: block;
       width: 109%;
+
       @include breakpoints (laptop) {
         width: 120%;
         height: 120%;
@@ -36,7 +42,7 @@
     width: 100%;
     display: flex;
     flex-direction: column;
-  
+
 
     @include breakpoints (laptop) {
       width: 70%;
@@ -48,11 +54,13 @@
       justify-content: flex-start;
       flex-direction: column;
       width: 30%;
-      @include breakpoints (mobile){
+
+      @include breakpoints (mobile) {
         margin-top: 10px;
         width: 100%;
       }
-      @include breakpoints (tablet){
+
+      @include breakpoints (tablet) {
         margin-top: 10px;
         width: 100%;
       }
@@ -68,8 +76,10 @@
         flex-direction: column;
         align-items: center;
         width: 100%;
+
         &__item {
           line-height: 24.5px;
+
           @include breakpoints (laptop) {
             font-size: 14px;
             line-height: 22px;
@@ -88,16 +98,18 @@
   background-color: white;
   height: 80%;
   padding-top: 100px;
-  @include breakpoints (mobile){
-   flex-direction: column; 
-   align-items: center;
-   padding-bottom: 100px;
-   width: 100%;
+
+  @include breakpoints (mobile) {
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 100px;
+    width: 100%;
   }
-  @include breakpoints (tablet){
-   flex-direction: column; 
-   align-items: center;
-   padding-bottom: 100px;
+
+  @include breakpoints (tablet) {
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 100px;
   }
 }
 
@@ -105,7 +117,7 @@
   font-weight: 700;
   font-size: 24px;
   line-height: 28.8px;
-  
+
   @include breakpoints (laptop) {
     font-size: 20px;
     line-height: 25px;

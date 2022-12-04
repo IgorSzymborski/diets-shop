@@ -6,34 +6,32 @@ import smallVege from '../../../assets/smallVege.png';
 import smallVegeFish from '../../../assets/smallVegeFish.png';
 import smallSport from '../../../assets/smallSport.png';
 import SmallGlutenLactose from '../../../assets/smallGlutenLactose.png';
-
 import mediumStandard from '../../../assets/mediumStandard.png';
 import mediumVege from '../../../assets/mediumVege.png';
 import mediumVegeFish from '../../../assets/mediumVegeFish.png';
 import mediumSport from '../../../assets/mediumSport.png';
 import mediumGlutenLactose from '../../../assets/mediumGlutenLactose.png';
-
 import { Link } from 'react-router-dom';
+
 const DietsHeader = (props) => {
   return (
     <div className={styles.headerContainer}>
-      
-        <Link className={styles.headerContainer__link} to="StandardDiet">
-          <div className={styles.headerContainer__link__photoContainer}>
-            <img
-              className={styles.headerContainer__link__photoContainer__smallImg}
-              src={smallStandard}
-              alt=""
-            />
-            <img
-              className={styles.headerContainer__link__photoContainer__mediumImg}
-              src={mediumStandard}
-              alt=""
-            />
-            <p className={styles.headerContainer__link__photoContainer__dietsName}>Standard</p>
-          </div>
-        </Link>
-      
+      <Link className={styles.headerContainer__link} to="StandardDiet">
+        <div className={styles.headerContainer__link__photoContainer}>
+          <img
+            className={styles.headerContainer__link__photoContainer__smallImg}
+            src={smallStandard}
+            alt=""
+          />
+          <img
+            className={styles.headerContainer__link__photoContainer__mediumImg}
+            src={mediumStandard}
+            alt=""
+          />
+          <p className={styles.headerContainer__link__photoContainer__dietsName}>Standard</p>
+        </div>
+      </Link>
+
       <Link className={styles.headerContainer__link} to="VegeDiet">
         <div className={styles.headerContainer__link__photoContainer}>
           <img

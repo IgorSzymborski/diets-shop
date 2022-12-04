@@ -1,0 +1,111 @@
+@import '/src/styles/mixings';
+
+.formWrapper {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(255, 255, 255);
+  border-radius: 0 0 45px 45px;
+  padding: 0 20px 20px 20px;
+
+  @include breakpoints (mobile) {
+    padding: 0;
+  }
+
+  &__tittle {
+    font-size: 40px;
+    text-transform: uppercase;
+    font-weight: 900;
+    color: #282828;
+    padding-bottom: 20px;
+  }
+
+  &__dietsWrapper,
+  &__kcalWrapper,
+  &__dayWrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+    font-size: 14px;
+    color: #625847;
+
+    &__typeDiet {
+      padding: 5px 150px 10px 5px;
+
+      @include breakpoints (mobile) {
+        padding: 5px 50px 5px 5px;
+      }
+
+      @include breakpoints (tablet) {
+        padding: 5px 180px 10px 5px;
+      }
+    }
+
+    &__kcal {
+      padding-right: 51px;
+    }
+
+    &__input {
+      -webkit-appearance: none;
+      width: 70%;
+      height: 5px;
+      background-color: #ffb526;
+      outline: none;
+      padding: 0;
+      margin: 0;
+      color: #282828;
+      -webkit-slider-runnable-track: none;
+      cursor: pointer;
+    }
+
+    &__input::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      background-color: black;
+      height: 16px;
+      width: 16px;
+      border-radius: 50%;
+    }
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    color: #625847;
+
+    @include breakpoints (mobile) {
+      padding-bottom: 20px;
+    }
+
+    &__details {
+      display: flex;
+      justify-content: space-between;
+      padding: 25px 10px 5px 10px;
+
+      &__price {
+        font-size: 24px;
+        font-weight: 700;
+        color: #E9B993;
+      }
+    }
+  }
+}
+
+
+
+.line {
+  width: 100%;
+  height: 1px;
+  background-color: #F3E9DA;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: transparent;
+  border: 2px solid rgb(255, 181, 38);
+  border-radius: 30px;
+  padding: 10px;
+
+}

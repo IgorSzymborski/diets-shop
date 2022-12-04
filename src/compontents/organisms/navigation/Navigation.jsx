@@ -32,8 +32,13 @@ const Navigation = (props) => {
       {open && (
         <div className={styles.navigationContainer__buttonsWrapper}>
           <div className={styles.navigationContainer__buttonsWrapper__link}>
-            <Button name="panel klienta" color="#FFB526" margin="0 3px 5px 3px"/>
-            <Button name="zamów online" border="1px solid #E9B993" color="white" margin="0 3px 5px 3px"/>
+            <Button name="panel klienta" color="#FFB526" margin="0 3px 5px 3px" />
+            <Button
+              name="zamów online"
+              border="1px solid #E9B993"
+              color="white"
+              margin="0 3px 5px 3px"
+            />
           </div>
           <div className={styles.navigationContainer__buttonsWrapper__social}>
             <SocialMediaIcons logo={BlackFacebook} />

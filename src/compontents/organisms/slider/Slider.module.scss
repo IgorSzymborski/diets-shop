@@ -8,11 +8,11 @@
   padding-top: 100px;
   width: 100%;
   height: 100vh;
-  background: linear-gradient(180deg, #F3E9DA 0%, #CFC0A7 100%);
-  @include breakpoints (mobile){
+  background: linear-gradient(180deg, #f3e9da 0%, #cfc0a7 100%);
+  @include breakpoints(mobile) {
     height: 75vh;
   }
-  @include breakpoints (tablet){
+  @include breakpoints(tablet) {
     height: 100vh;
   }
 
@@ -29,7 +29,7 @@
       line-height: 49px;
     }
 
-    @include breakpoints (tablet) {
+    @include breakpoints(tablet) {
       font-size: 70px;
       line-height: 65px;
     }
@@ -48,20 +48,20 @@
     position: absolute;
     top: 105px;
     overflow-x: hidden;
-    @include breakpoints (mobile) {
+    @include breakpoints(mobile) {
       overflow-x: visible;
     }
 
-    @include breakpoints (tablet) {
+    @include breakpoints(tablet) {
       overflow-x: visible;
     }
 
     &__left {
-      @include breakpoints (mobile) {
+      @include breakpoints(mobile) {
         display: none;
       }
 
-      @include breakpoints (tablet) {
+      @include breakpoints(tablet) {
         display: none;
       }
     }
@@ -89,7 +89,7 @@
             top: 100%;
           }
 
-          @include breakpoints (tablet) {
+          @include breakpoints(tablet) {
             top: 92%;
           }
         }
@@ -99,7 +99,7 @@
             left: 10px;
           }
 
-          @include breakpoints (tablet) {
+          @include breakpoints(tablet) {
             left: 92px;
           }
         }
@@ -109,7 +109,7 @@
             right: 10px;
           }
 
-          @include breakpoints (tablet) {
+          @include breakpoints(tablet) {
             right: 92px;
           }
         }
@@ -127,7 +127,7 @@
           top: 55%;
         }
 
-        @include breakpoints (tablet) {
+        @include breakpoints(tablet) {
           justify-content: center;
           top: 75%;
         }
@@ -144,7 +144,7 @@
             font-size: 52px;
           }
 
-          @include breakpoints (tablet) {
+          @include breakpoints(tablet) {
             font-size: 75px;
           }
         }
@@ -156,18 +156,17 @@
           width: 100%;
           @include breakpoints(mobile) {
             flex-direction: column;
-            
           }
         }
       }
     }
 
     &__right {
-      @include breakpoints (mobile) {
+      @include breakpoints(mobile) {
         display: none;
       }
 
-      @include breakpoints (tablet) {
+      @include breakpoints(tablet) {
         display: none;
       }
     }
@@ -183,7 +182,8 @@
 }
 
 .photo {
-  @include breakpoints(laptop) {}
+  @include breakpoints(laptop) {
+  }
 
   @include breakpoints(mobile) {
     width: 100%;

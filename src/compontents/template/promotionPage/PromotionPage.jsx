@@ -8,8 +8,6 @@ import BlackInstagram from '../../../assets/BlackInstagram.png';
 import BlackFacebook from '../../../assets/BlackFacebook.png';
 import firstMobileBanner from '../../../assets/promotionBanerMobile1.png';
 
-
-
 const PromotionPage = (props) => {
   return (
     <div className={styles.promotionContainer}>

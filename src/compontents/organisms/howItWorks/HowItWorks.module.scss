@@ -8,7 +8,7 @@
   flex-direction: column;
   padding: 100px 0 100px 0;
   width: 100%;
-  
+
   @include breakpoints (mobile) {
     padding-top: 630px;
   }
@@ -31,6 +31,7 @@
     width: 100%;
     list-style: none;
     padding-top: 100px;
+
     @include breakpoints (mobile) {
       flex-direction: column;
       justify-content: space-between;
@@ -45,6 +46,7 @@
     &__item {
       &__img {
         width: 100%;
+
         @include breakpoints(laptop) {
           width: 99%;
         }

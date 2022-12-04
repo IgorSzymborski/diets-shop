@@ -11,15 +11,19 @@ const IconsList = (props) => {
       <li className={styles.list__item}>
         <div className={styles.list__item__container}>
           <img className={styles.list__item__container__img} src={firstIcon} alt="" />
-          <p className={styles.list__item__container__text}>transport 
+          <p className={styles.list__item__container__text}>
+            transport
             <br />
-          autochłodniami</p>
+            autochłodniami
+          </p>
         </div>
       </li>
       <li className={styles.list__item}>
         <div className={styles.list__item__container}>
           <img className={styles.list__item__container__img} src={secondIcon} alt="" />
-          <p className={styles.list__item__container__text}>dostawa w <br /> godzinach <br /> 22:00-7:00</p>
+          <p className={styles.list__item__container__text}>
+            dostawa w <br /> godzinach <br /> 22:00-7:00
+          </p>
         </div>
       </li>
       <li className={styles.list__item}>

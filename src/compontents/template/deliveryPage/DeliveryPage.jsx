@@ -5,7 +5,6 @@ import map from '../../../assets/mapa 1.png';
 import FilterInput from '../../atoms/filterInput/FilterInput';
 import IconsList from '../../molecules/ionsList/IconsList';
 
-
 const DeliveryPage = (props) => {
   return (
     <div className={styles.deliveryContainer}>
@@ -15,7 +14,6 @@ const DeliveryPage = (props) => {
       <div className={styles.deliveryContainer__searchContainer}>
         <h1 className={styles.deliveryContainer__searchContainer__tittle}>Warszawa i okolice</h1>
         <FilterInput />
-        
       </div>
       <IconsList />
       <div className={styles.deliveryContainer__textWrapper}>

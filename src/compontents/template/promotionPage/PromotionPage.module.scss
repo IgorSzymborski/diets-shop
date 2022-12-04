@@ -20,7 +20,7 @@
     }
 
     &__imgMobile {
-      display: blockgicd;
+      display: block;
 
       @include breakpoints (tablet) {
         display: none;

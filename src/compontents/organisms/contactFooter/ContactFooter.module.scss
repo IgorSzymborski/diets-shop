@@ -5,6 +5,7 @@
   align-items: center;
   justify-content: space-around;
   height: 20%;
+
   @include breakpoints (mobile) {
     flex-direction: column;
     height: 30vh;
@@ -19,6 +20,7 @@
 
   &__list {
     list-style: none;
+
     @include breakpoints (mobile) {
       display: flex;
       flex-direction: column;

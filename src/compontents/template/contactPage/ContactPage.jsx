@@ -40,7 +40,6 @@ const ContactPage = (props) => {
             />
             <ul className={styles.contactContainer__infoWrapper__contactDetails__list}>
               <li className={styles.contactContainer__infoWrapper__contactDetails__list__item}>
-                
                 <span className={styles.bold}>kontakt@dailycious.pl</span>
               </li>
             </ul>

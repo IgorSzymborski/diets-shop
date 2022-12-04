@@ -1,16 +1,18 @@
 @import '/src/styles/mixings';
 
-.input{
+.input {
   font-size: 14px;
   border: 2px solid rgba(255, 181, 38, 1);
   padding: 20px 30px;
   border-radius: 30px;
   text-align: left;
   width: 100%;
-  @include breakpoints (mobile){
+
+  @include breakpoints (mobile) {
     width: 180%;
   }
-  @include breakpoints (tablet){
+
+  @include breakpoints (tablet) {
     width: 130%;
   }
 }

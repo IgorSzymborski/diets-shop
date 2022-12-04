@@ -6,15 +6,16 @@
   display: flex;
   justify-content: space-around;
   padding: 70px 120px;
-  @include breakpoints (mobile){
+
+  @include breakpoints (mobile) {
     width: 100%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     padding: 30px 40px;
   }
 
-  @include breakpoints (tablet){
-    grid-template-columns: repeat(3,1fr);
+  @include breakpoints (tablet) {
+    grid-template-columns: repeat(3, 1fr);
     padding: 60px 10px 30px 45px;
   }
 
@@ -24,9 +25,11 @@
 
   &__leftList {
     list-style: none;
-    @include breakpoints (mobile){
+
+    @include breakpoints (mobile) {
       padding-right: 20px;
     }
+
     &__tittle {
       color: white;
       font-size: 14px;
