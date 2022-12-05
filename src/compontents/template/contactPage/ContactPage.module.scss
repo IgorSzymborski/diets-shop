@@ -42,7 +42,9 @@
     width: 100%;
     display: flex;
     flex-direction: column;
-
+@include breakpoints (mobile){
+  border-radius: 0;
+}
 
     @include breakpoints (laptop) {
       width: 70%;

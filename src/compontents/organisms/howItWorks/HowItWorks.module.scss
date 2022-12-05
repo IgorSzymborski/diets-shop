@@ -22,6 +22,9 @@
     text-transform: uppercase;
     font-weight: 900;
     text-align: center;
+    @include breakpoints (mobile){
+      padding: 10px;
+    }
   }
 
   &__list {

@@ -12,15 +12,26 @@ import { Link } from 'react-router-dom';
 
 const Navigation = (props) => {
   const [open, setOpen] = useState(true);
+  const [colorChange, setColorChange] = useState(false);
+
   const toggleMenu = () => {
     setOpen((prevState) => !prevState);
   };
+
+  const changeNavColor = () => {
+    if (window.scrollY >= 90) {
+      setColorChange(true);
+    } else {
+      setColorChange(false);
+    }
+  };
+  window.addEventListener('scroll', changeNavColor);
 
   return (
     <div
       className={`${styles.navigationContainer} ${
         open ? styles.active : styles.navigationContainer
-      }`}
+      } ${colorChange ? styles.activeNavbar : styles.navigationContainer}`}
     >
       {open && <Menu toggleMenu={toggleMenu} />}
       <div className={styles.navigationContainer__imgWrapper}>

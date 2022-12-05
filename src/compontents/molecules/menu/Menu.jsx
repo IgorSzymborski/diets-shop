@@ -11,7 +11,7 @@ const Menu = (props) => {
           diety
         </Link>
 
-        <div className={styles.list__imte__line}></div>
+        <div className={styles.list__item__line}></div>
       </li>
       <li className={styles.list__item}>
         <Link className={styles.list__item__link} to="PricePage">

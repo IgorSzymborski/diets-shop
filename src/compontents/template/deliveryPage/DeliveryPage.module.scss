@@ -60,11 +60,14 @@
       text-align: center;
 
       @include breakpoints (mobile) {
-        margin-bottom: 10px;
+        margin-bottom: 15px;
+        font-size: 25px;
+        line-height: 25px;
       }
 
       @include breakpoints (tablet) {
-        margin-bottom: 0px;
+        font-size: 30px;
+        line-height: 30px;
       }
 
       @include breakpoints (laptop) {

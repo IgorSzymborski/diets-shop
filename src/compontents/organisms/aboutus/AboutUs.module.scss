@@ -23,7 +23,7 @@
     max-width: 30%;
 
     @include breakpoints (mobile) {
-      text-align: left;
+      text-align: center;
       max-width: 100%;
       right: 5%;
       left: 5%;
