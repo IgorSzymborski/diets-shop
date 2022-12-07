@@ -1,4 +1,4 @@
-import { React, useState } from 'react';
+import { React, useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
 import Menu from '../../molecules/menu/Menu';
 import styles from '../navigation/Navigation.module.scss';
@@ -13,6 +13,38 @@ import { Link } from 'react-router-dom';
 const Navigation = (props) => {
   const [open, setOpen] = useState(true);
   const [colorChange, setColorChange] = useState(false);
+
+  const getWindowDimensions = () => {
+    const { innerWidth: width, innerHeight: height } = window;
+    return {
+      width,
+      height,
+    };
+  };
+
+  const useWindowDimensions = () => {
+    const [windowDimensions, setWindowDimensions] = useState(getWindowDimensions());
+
+    useEffect(() => {
+      const handleResize = () => {
+        setWindowDimensions(getWindowDimensions());
+      };
+      window.addEventListener('resize', handleResize);
+      return () => window.removeEventListener('resize', handleResize);
+    }, []);
+    return windowDimensions;
+  };
+
+  const { width } = useWindowDimensions();
+
+  const hoverMenuOnMobile = () => {
+    if (width > 1000) {
+      setOpen(true);
+    } else {
+      setOpen(false);
+    }
+  };
+  window.addEventListener('resize', hoverMenuOnMobile);
 
   const toggleMenu = () => {
     setOpen((prevState) => !prevState);
