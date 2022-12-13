@@ -1,6 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styles from './RightSideFooter.module.scss';
+import { Link } from 'react-router-dom';
+
 
 const RightSideFooter = (props) => {
   return (
@@ -8,62 +10,62 @@ const RightSideFooter = (props) => {
       <ul className={styles.rightSideContainer__leftList}>
         <h2 className={styles.rightSideContainer__leftList__tittle}>Nasze diety</h2>
         <li className={styles.rightSideContainer__leftList__item}>
-          <a className={styles.rightSideContainer__leftList__item__link} href="">
+          <Link className={styles.rightSideContainer__leftList__item__link} to="/diets/standard">
             standard
-          </a>
+          </Link>
         </li>
         <li className={styles.rightSideContainer__leftList__item}>
-          <a className={styles.rightSideContainer__leftList__item__link} href="">
+          <Link className={styles.rightSideContainer__leftList__item__link} to="/diets/vege">
             vege
-          </a>
+          </Link>
         </li>
         <li className={styles.rightSideContainer__leftList__item}>
-          <a className={styles.rightSideContainer__leftList__item__link} href="">
+          <Link className={styles.rightSideContainer__leftList__item__link} to="/diets/vege+fish">
             vege+fish
-          </a>
+          </Link>
         </li>
         <li className={styles.rightSideContainer__leftList__item}>
-          <a className={styles.rightSideContainer__leftList__item__link} href="">
+          <Link className={styles.rightSideContainer__leftList__item__link} to="/diets/sport">
             sport
-          </a>
+          </Link>
         </li>
         <li className={styles.rightSideContainer__leftList__item}>
-          <a className={styles.rightSideContainer__leftList__item__link} href="">
-            gluten&lactose free
-          </a>
+          <Link className={styles.rightSideContainer__leftList__item__link} to="/diets/gluten&lactose">
+            gluten&lactose
+          </Link>
         </li>
       </ul>
       <ul className={styles.rightSideContainer__centerList}>
         <h2 className={styles.rightSideContainer__centerList__tittle}>Mapa strony</h2>
         <li className={styles.rightSideContainer__centerList__item}>
-          <a className={styles.rightSideContainer__centerList__item__link} href="">
+          <Link className={styles.rightSideContainer__centerList__item__link} to="/">
             strona główna
-          </a>
+          </Link>
         </li>
         <li className={styles.rightSideContainer__centerList__item}>
-          <a className={styles.rightSideContainer__centerList__item__link} href="">
+          <Link className={styles.rightSideContainer__centerList__item__link} to="/diets/standard">
             diety
-          </a>
+          </Link>
         </li>
         <li className={styles.rightSideContainer__centerList__item}>
-          <a className={styles.rightSideContainer__centerList__item__link} href="">
+          <Link className={styles.rightSideContainer__centerList__item__link} to="price">
             cennik
-          </a>
+          </Link>
         </li>
         <li className={styles.rightSideContainer__centerList__item}>
-          <a className={styles.rightSideContainer__centerList__item__link} href="">
+          <Link className={styles.rightSideContainer__centerList__item__link} to="promotion">
             promocje
-          </a>
+          </Link>
         </li>
         <li className={styles.rightSideContainer__centerList__item}>
-          <a className={styles.rightSideContainer__centerList__item__link} href="">
+          <Link className={styles.rightSideContainer__centerList__item__link} to="/delivery">
             dostawa
-          </a>
+          </Link>
         </li>
         <li className={styles.rightSideContainer__centerList__item}>
-          <a className={styles.rightSideContainer__centerList__item__link} href="">
+          <Link className={styles.rightSideContainer__centerList__item__link} to="">
             polityka prywatności
-          </a>
+          </Link>
         </li>
         <li className={styles.rightSideContainer__centerList__item}>
           <a className={styles.rightSideContainer__centerList__item__link} href="">
@@ -74,9 +76,9 @@ const RightSideFooter = (props) => {
       <ul className={styles.rightSideContainer__rightList}>
         <h2 className={styles.rightSideContainer__rightList__tittle}>Zamówienia</h2>
         <li className={styles.rightSideContainer__rightList__item}>
-          <a className={styles.rightSideContainer__rightList__item__link} href="">
+          <Link className={styles.rightSideContainer__rightList__item__link} to="contact">
             kontakt
-          </a>
+          </Link>
         </li>
         <li className={styles.rightSideContainer__rightList__item}>
           <a className={styles.rightSideContainer__rightList__item__link} href="">

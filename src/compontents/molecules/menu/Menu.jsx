@@ -7,26 +7,26 @@ const Menu = (props) => {
   return (
     <ul className={styles.list}>
       <li className={styles.list__item}>
-        <Link className={styles.list__item__link} to="DietsPage">
+        <Link className={styles.list__item__link} to="diets/standard">
           diety
         </Link>
 
         <div className={styles.list__item__line}></div>
       </li>
       <li className={styles.list__item}>
-        <Link className={styles.list__item__link} to="PricePage">
+        <Link className={styles.list__item__link} to="price">
           cennik
         </Link>
         <div className={styles.list__item__line}></div>
       </li>
       <li className={styles.list__item}>
-        <Link className={styles.list__item__link} to="PromotionPage">
+        <Link className={styles.list__item__link} to="promotion">
           promocje
         </Link>
         <div className={styles.list__item__line}></div>
       </li>
       <li className={styles.list__item}>
-        <Link className={styles.list__item__link} to="DeliveryPage">
+        <Link className={styles.list__item__link} to="delivery">
           dostawa
         </Link>
         <div className={styles.list__item__line}></div>
@@ -38,7 +38,7 @@ const Menu = (props) => {
         <div className={styles.list__item__line}></div>
       </li>
       <li className={styles.list__item}>
-        <Link className={styles.list__item__link} to="ContactPage">
+        <Link className={styles.list__item__link} to="contact">
           kontakt
         </Link>
         <div className={styles.list__item__line}></div>

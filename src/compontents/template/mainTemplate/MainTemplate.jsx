@@ -10,20 +10,24 @@ import PromotionPage from '../promotionPage/PromotionPage';
 import ContactPage from '../contactPage/ContactPage';
 import DeliveryPage from '../deliveryPage/DeliveryPage';
 import PricePage from '../pricePage/PricePage';
+import ScrollToTop from '../../../ScrollToTop';
+
 
 const MainTemplate = (props) => {
   return (
     <div className={styles.mainTemplateContainer}>
       <BrowserRouter>
         <Navigation />
-        <Routes>
-          <Route path="/" element={<HomePage />} />
-          <Route path="DietsPage/*" element={<DietsPage />} />
-          <Route path="PromotionPage" element={<PromotionPage />} />
-          <Route path="ContactPage" element={<ContactPage />} />
-          <Route path="DeliveryPage" element={<DeliveryPage />} />
-          <Route path="PricePage" element={<PricePage />} />
-        </Routes>
+        <ScrollToTop>
+          <Routes>
+            <Route path="/" element={<HomePage />} />
+            <Route path="diets/:title" element={<DietsPage />} />
+            <Route path="promotion" element={<PromotionPage />} />
+            <Route path="contact" element={<ContactPage />} />
+            <Route path="delivery" element={<DeliveryPage />} />
+            <Route path="price" element={<PricePage />} />
+          </Routes>
+        </ScrollToTop>
         <Footer />
       </BrowserRouter>
     </div>

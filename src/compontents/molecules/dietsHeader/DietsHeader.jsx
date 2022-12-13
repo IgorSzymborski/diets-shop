@@ -16,7 +16,7 @@ import { Link } from 'react-router-dom';
 const DietsHeader = (props) => {
   return (
     <div className={styles.headerContainer}>
-      <Link className={styles.headerContainer__link} to="StandardDiet">
+      <Link className={styles.headerContainer__link} to="/diets/standard">
         <div className={styles.headerContainer__link__photoContainer}>
           <img
             className={styles.headerContainer__link__photoContainer__smallImg}
@@ -32,7 +32,7 @@ const DietsHeader = (props) => {
         </div>
       </Link>
 
-      <Link className={styles.headerContainer__link} to="VegeDiet">
+      <Link className={styles.headerContainer__link} to="/diets/vege">
         <div className={styles.headerContainer__link__photoContainer}>
           <img
             className={styles.headerContainer__link__photoContainer__smallImg}
@@ -48,7 +48,7 @@ const DietsHeader = (props) => {
         </div>
       </Link>
 
-      <Link className={styles.headerContainer__link} to="VegeFish">
+      <Link className={styles.headerContainer__link} to="/diets/vege+fish">
         <div className={styles.headerContainer__link__photoContainer}>
           <img
             className={styles.headerContainer__link__photoContainer__smallImg}
@@ -63,7 +63,10 @@ const DietsHeader = (props) => {
           <p className={styles.headerContainer__link__photoContainer__dietsName}>Vege+Fish</p>
         </div>
       </Link>
-      <a className={styles.headerContainer__link} href="">
+
+
+
+      <Link className={styles.headerContainer__link} to="/diets/sport">
         <div className={styles.headerContainer__link__photoContainer}>
           <img
             className={styles.headerContainer__link__photoContainer__smallImg}
@@ -77,8 +80,8 @@ const DietsHeader = (props) => {
           />
           <p className={styles.headerContainer__link__photoContainer__dietsName}>Sport</p>
         </div>
-      </a>
-      <a className={styles.headerContainer__link} href="">
+      </Link>
+      <Link className={styles.headerContainer__link} to="/diets/gluten&lactose">
         <div className={styles.headerContainer__link__photoContainer}>
           <img
             className={styles.headerContainer__link__photoContainer__smallImg}
@@ -92,7 +95,7 @@ const DietsHeader = (props) => {
           />
           <p className={styles.headerContainer__link__photoContainer__dietsName}>Gluten&Lactose</p>
         </div>
-      </a>
+      </Link>
     </div>
   );
 };

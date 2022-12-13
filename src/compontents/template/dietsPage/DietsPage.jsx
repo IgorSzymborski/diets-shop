@@ -4,52 +4,46 @@ import styles from './DietsPage.module.scss';
 import DietsHeader from '../../molecules/dietsHeader/DietsHeader';
 import standard from '../../../assets/Standard.png';
 import backgroundStandard from '../../../assets/backgroundStandard.png';
-import iconI from '../../../assets/standardIcon1.png';
-import iconII from '../../../assets/standardIcon2.png';
 import Button from '../../atoms/button/Button';
+import { dietsDetails } from '../../../data/data';
+import { useParams } from 'react-router-dom';
 
 const DietsPage = (props) => {
+  let { title } = useParams();
+
+  const currentDietArray = dietsDetails.filter((diet) => {
+    return diet.name === title;
+  });
+
   return (
     <div className={styles.dietsContainer}>
       <DietsHeader />
       <div className={styles.standardDietContainer}>
-        <div className={styles.standardDietContainer__description}>
-          <p className={styles.standardDietContainer__description__diet}>dieta</p>
-          <h1 className={styles.standardDietContainer__description__dietName}>Standard</h1>
-          <div className={styles.standardDietContainer__description__kcalWrapper}>
-            <div className={styles.standardDietContainer__description__kcalWrapper__kcalItem}>
-              <span className={styles.bold}>1200</span> kcal
+        {currentDietArray.map((item) => (
+          <div key={item.id} className={styles.standardDietContainer__description}>
+            <p className={styles.standardDietContainer__description__diet}>dieta</p>
+            <h1 className={styles.standardDietContainer__description__dietName}>{item.name}</h1>
+            <ul className={styles.standardDietContainer__description__kcalWrapper}>
+              {item.kcal.map((kcal) => (
+                <li
+                  key={kcal.kcal}
+                  className={styles.standardDietContainer__description__kcalWrapper__kcalItem}
+                >
+                  <span className={styles.bold}>{kcal.kcal}</span> kcal
+                </li>
+              ))}
+            </ul>
+            <p className={styles.standardDietContainer__description__text}>{item.description}</p>
+            <div className={styles.standardDietContainer__description__iconsWrapper}>
+              <img src={item.firstIcon} alt="" />
+              <img src={item.secondIcon} alt="" />
             </div>
-            <div className={styles.standardDietContainer__description__kcalWrapper__kcalItem}>
-              <span className={styles.bold}>1500</span> kcal
-            </div>
-            <div className={styles.standardDietContainer__description__kcalWrapper__kcalItem}>
-              <span className={styles.bold}>1800</span> kcal
-            </div>
-            <div className={styles.standardDietContainer__description__kcalWrapper__kcalItem}>
-              <span className={styles.bold}>2000</span> kcal
-            </div>
-            <div className={styles.standardDietContainer__description__kcalWrapper__kcalItem}>
-              <span className={styles.bold}>2500</span> kcal
+            <div className={styles.standardDietContainer__description__buttonsWrapper}>
+              <Button name="zamów online" margin="0 5px 5px 0" />
+              <Button name="przykładowe menu" />
             </div>
           </div>
-          <p className={styles.standardDietContainer__description__text}>
-            Doskonale wiemy jak ważna jest odpowiednia dieta i dobrze skonstruowany plan żywieniowy
-            przy wzmożonej aktywności fizycznej i intensywnych treningach. Dlatego też dietę sport
-            stworzyliśmy tak, by nie tylko zawierała odpowiednią kaloryke i dostarczała niezbędną
-            ilość energii, ale również wspierała regenerację mięśni i prawidłowe funkcjonowanie
-            organizmu. Menu opracowane przez wykwalifikowanych dietetyków, odpowiedni bilans
-            makroskładników i wspaniały smak to przepis na sukces każdego dnia!
-          </p>
-          <div className={styles.standardDietContainer__description__iconsWrapper}>
-            <img src={iconI} alt="" />
-            <img src={iconII} alt="" />
-          </div>
-          <div className={styles.standardDietContainer__description__buttonsWrapper}>
-            <Button name="zamów online" margin="0 5px 5px 0" />
-            <Button name="przykładowe menu" />
-          </div>
-        </div>
+        ))}
 
         <div className={styles.standardDietContainer__photosWrapper}>
           <img

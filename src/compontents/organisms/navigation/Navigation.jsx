@@ -10,9 +10,11 @@ import BlackFacebook from '../../../assets/BlackFacebook.png';
 import HamburgerButton from '../../atoms/hamburgerButton/HamburgerButton';
 import { Link } from 'react-router-dom';
 
+
 const Navigation = (props) => {
   const [open, setOpen] = useState(true);
   const [colorChange, setColorChange] = useState(false);
+  
 
   const getWindowDimensions = () => {
     const { innerWidth: width, innerHeight: height } = window;
@@ -58,6 +60,12 @@ const Navigation = (props) => {
     }
   };
   window.addEventListener('scroll', changeNavColor);
+
+
+
+
+
+
 
   return (
     <div
