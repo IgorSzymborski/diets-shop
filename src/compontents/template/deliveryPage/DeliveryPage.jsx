@@ -4,6 +4,7 @@ import styles from './DeliveryPage.module.scss';
 import map from '../../../assets/mapa 1.png';
 import FilterInput from '../../atoms/filterInput/FilterInput';
 import IconsList from '../../molecules/ionsList/IconsList';
+import DeliveryList from '../../molecules/deliveryList/DeliveryList';
 
 const DeliveryPage = (props) => {
   return (
@@ -13,7 +14,8 @@ const DeliveryPage = (props) => {
       </div>
       <div className={styles.deliveryContainer__searchContainer}>
         <h1 className={styles.deliveryContainer__searchContainer__tittle}>Warszawa i okolice</h1>
-        <FilterInput />
+        {/* <FilterInput /> */}
+        <DeliveryList />
       </div>
       <IconsList />
       <div className={styles.deliveryContainer__textWrapper}>

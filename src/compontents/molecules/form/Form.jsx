@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import styles from './Form.module.scss';
 import arrow from '../../../assets/arrow.png';
 
-const Form = (props) => {
+const Form = () => {
   return (
     <div className={styles.formWrapper}>
       <h1 className={styles.formWrapper__tittle}>Cennik</h1>

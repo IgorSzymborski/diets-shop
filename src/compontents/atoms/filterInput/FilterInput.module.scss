@@ -9,10 +9,10 @@
   width: 100%;
 
   @include breakpoints (mobile) {
-    width: 180%;
+    // width: 180%;
   }
 
   @include breakpoints (tablet) {
-    width: 130%;
+    // width: 130%;
   }
 }

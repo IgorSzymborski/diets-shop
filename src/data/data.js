@@ -85,3 +85,9 @@ export const dietsDetails = [{
     }]
   },
 ]
+
+export const deliveryCity =[
+  {city: "Legionowo"},
+  {city: "Warszawa"},
+  {city: "Nieporet"},
+]
