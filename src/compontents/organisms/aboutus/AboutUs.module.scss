@@ -3,7 +3,7 @@
 .aboutUsContainer {
   width: 100%;
   position: relative;
-
+  
   @include breakpoints (mobile) {
     margin-top: 20px;
   }

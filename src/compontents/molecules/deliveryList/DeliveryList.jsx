@@ -21,7 +21,7 @@ const DeliveryList = (props) => {
             .filter((item) => {
               return inputValue.toLowerCase() === ''
                 ? item
-                : item.city.toLowerCase().includes(inputValue);
+                : item.city.toLowerCase().substr(0, 3).includes(inputValue);
             })
             .map((city) => (
               <li key={city.city} className={styles.deliveryWrapper__deliveryList__item}>
