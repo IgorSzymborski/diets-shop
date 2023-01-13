@@ -15,6 +15,7 @@ const DietsPage = (props) => {
     return diet.name === title;
   });
 
+  console.log(currentDietArray);
   return (
     <div className={styles.dietsContainer}>
       <DietsHeader />

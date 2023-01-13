@@ -14,7 +14,7 @@ const DeliveryPage = (props) => {
       </div>
       <div className={styles.deliveryContainer__searchContainer}>
         <h1 className={styles.deliveryContainer__searchContainer__tittle}>Warszawa i okolice</h1>
-        {/* <FilterInput /> */}
+       
         <DeliveryList />
       </div>
       <IconsList />

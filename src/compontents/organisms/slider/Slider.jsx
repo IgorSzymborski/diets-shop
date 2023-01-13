@@ -13,10 +13,13 @@ const Slider = ({ slides }) => {
   const [currentSlideRight, setCurrentSlideRight] = useState(1);
   const length = slides.length;
 
+
+  
   const nextSlide = () => {
     setCurrentSlideCenter(currentSlideCenter === length - 1 ? 0 : currentSlideCenter + 1);
     setCurrentSlideLeft(currentSlideLeft === length - 1 ? 0 : currentSlideLeft + 1);
     setCurrentSlideRight(currentSlideRight === length - 1 ? 0 : currentSlideRight + 1);
+    console.log(length);
   };
 
   const prevSlide = () => {
@@ -25,7 +28,6 @@ const Slider = ({ slides }) => {
     setCurrentSlideRight(currentSlideRight === 0 ? length - 1 : currentSlideRight - 1);
   };
 
-  if (!Array.isArray(slides) || slides.length === 0) return null;
 
   return (
     <div className={styles.sliderContainer}>

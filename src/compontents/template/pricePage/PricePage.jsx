@@ -10,7 +10,7 @@ const PricePage = (props) => {
       <div className={styles.pricePageContainer__formContainer}>
         <FormWrapper />
       </div>
-
+      
       <div className={styles.pricePageContainer__photoWrapper}>
         <img className={styles.pricePageContainer__photoWrapper__photo} src={standard} alt="" />
       </div>

@@ -8,7 +8,6 @@ const FormWrapper = (props) => {
   return (
     <div className={styles.formWrapper}>
       <Form />
-      <FormFooter />
     </div>
   );
 };

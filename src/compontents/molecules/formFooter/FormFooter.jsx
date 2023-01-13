@@ -3,12 +3,12 @@ import PropTypes from 'prop-types';
 import styles from './FormFooter.module.scss';
 import Button from '../../atoms/button/Button';
 
-const FormFooter = (props) => {
+const FormFooter = ({allCost}) => {
   return (
     <div className={styles.formFooterContainer}>
       <div className={styles.formFooterContainer__allCost}>
-        <p className={styles.formFooterContainer__allCost__text}>koszt całkowity</p>
-        <p className={styles.formFooterContainer__allCost__price}>819,00 zł</p>
+        <p className={styles.formFooterContainer__allCost__text}> koszt całkowity</p>
+        <p className={styles.formFooterContainer__allCost__price}> {allCost} zł</p>
       </div>
 
       <div className={styles.formFooterContainer__deliver}>

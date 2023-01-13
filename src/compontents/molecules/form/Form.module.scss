@@ -6,7 +6,8 @@
   background-color: rgb(255, 255, 255);
   border-radius: 0 0 45px 45px;
   padding: 0 20px 20px 20px;
-
+  width: 100%;
+  
   @include breakpoints (mobile) {
     padding: 0;
   }
@@ -28,12 +29,32 @@
     padding: 15px 0;
     font-size: 14px;
     color: #625847;
+    
+
+    &__listWrapper{
+      position: relative;
+      &__list{
+        list-style: none;
+        border: 2px solid  rgb(255, 181, 38);
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        background-color: #fff;
+        border-radius: 0 0 15px 15px;
+        z-index: 2;
+        &__item{
+          padding: 15px;
+          cursor: pointer;
+        }
+      }
+    }
 
     &__typeDiet {
       padding: 5px 150px 10px 5px;
-
+      width: 220px;
       @include breakpoints (mobile) {
         padding: 5px 50px 5px 5px;
+        width: 100%;
       }
 
       @include breakpoints (tablet) {
@@ -43,6 +64,21 @@
 
     &__kcal {
       padding-right: 51px;
+    }
+
+
+    &__countDay {
+      width: 100%;
+      display: flex;
+      justify-content: flex-end;
+      margin-bottom: 12px;
+    }
+
+    &__inputWrapper {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
     }
 
     &__input {
@@ -56,6 +92,8 @@
       color: #282828;
       -webkit-slider-runnable-track: none;
       cursor: pointer;
+
+
     }
 
     &__input::-webkit-slider-thumb {
@@ -65,6 +103,18 @@
       width: 16px;
       border-radius: 50%;
     }
+
+
+  }
+
+  &__dayWrapper {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  &__dietsWrapper{
+    display: flex;
+    
   }
 
   &__info {
@@ -107,5 +157,5 @@
   border: 2px solid rgb(255, 181, 38);
   border-radius: 30px;
   padding: 10px;
-
+  cursor: pointer;
 }
