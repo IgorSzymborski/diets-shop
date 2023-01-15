@@ -13,8 +13,6 @@ const Slider = ({ slides }) => {
   const [currentSlideRight, setCurrentSlideRight] = useState(1);
   const length = slides.length;
 
-
-  
   const nextSlide = () => {
     setCurrentSlideCenter(currentSlideCenter === length - 1 ? 0 : currentSlideCenter + 1);
     setCurrentSlideLeft(currentSlideLeft === length - 1 ? 0 : currentSlideLeft + 1);
@@ -27,7 +25,6 @@ const Slider = ({ slides }) => {
     setCurrentSlideLeft(currentSlideLeft === 0 ? length - 1 : currentSlideLeft - 1);
     setCurrentSlideRight(currentSlideRight === 0 ? length - 1 : currentSlideRight - 1);
   };
-
 
   return (
     <div className={styles.sliderContainer}>

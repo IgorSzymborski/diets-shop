@@ -10,28 +10,28 @@ const RightSideFooter = (props) => {
       <ul className={styles.rightSideContainer__leftList}>
         <h2 className={styles.rightSideContainer__leftList__tittle}>Nasze diety</h2>
         <li className={styles.rightSideContainer__leftList__item}>
-          <Link className={styles.rightSideContainer__leftList__item__link} to="/diets/standard">
-            standard
+          <Link className={styles.rightSideContainer__leftList__item__link} to="/diets/classic">
+            classic
           </Link>
         </li>
         <li className={styles.rightSideContainer__leftList__item}>
-          <Link className={styles.rightSideContainer__leftList__item__link} to="/diets/vege">
-            vege
+          <Link className={styles.rightSideContainer__leftList__item__link} to="/diets/vegetarian">
+            vegeterian
           </Link>
         </li>
         <li className={styles.rightSideContainer__leftList__item}>
-          <Link className={styles.rightSideContainer__leftList__item__link} to="/diets/vege+fish">
-            vege+fish
+          <Link className={styles.rightSideContainer__leftList__item__link} to="/diets/vegan">
+            vegan
           </Link>
         </li>
         <li className={styles.rightSideContainer__leftList__item}>
-          <Link className={styles.rightSideContainer__leftList__item__link} to="/diets/sport">
-            sport
+          <Link className={styles.rightSideContainer__leftList__item__link} to="/diets/keto">
+            keto
           </Link>
         </li>
         <li className={styles.rightSideContainer__leftList__item}>
-          <Link className={styles.rightSideContainer__leftList__item__link} to="/diets/gluten&lactose">
-            gluten&lactose
+          <Link className={styles.rightSideContainer__leftList__item__link} to="/diets/low&ig">
+            low&ig
           </Link>
         </li>
       </ul>

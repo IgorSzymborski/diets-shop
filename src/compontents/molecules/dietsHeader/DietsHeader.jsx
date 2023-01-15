@@ -16,7 +16,7 @@ import { Link } from 'react-router-dom';
 const DietsHeader = (props) => {
   return (
     <div className={styles.headerContainer}>
-      <Link className={styles.headerContainer__link} to="/diets/standard">
+      <Link className={styles.headerContainer__link} to="/diets/classic">
         <div className={styles.headerContainer__link__photoContainer}>
           <img
             className={styles.headerContainer__link__photoContainer__smallImg}
@@ -28,11 +28,11 @@ const DietsHeader = (props) => {
             src={mediumStandard}
             alt=""
           />
-          <p className={styles.headerContainer__link__photoContainer__dietsName}>Standard</p>
+          <p className={styles.headerContainer__link__photoContainer__dietsName}>Classic</p>
         </div>
       </Link>
 
-      <Link className={styles.headerContainer__link} to="/diets/vege">
+      <Link className={styles.headerContainer__link} to="/diets/vegetarian">
         <div className={styles.headerContainer__link__photoContainer}>
           <img
             className={styles.headerContainer__link__photoContainer__smallImg}
@@ -44,11 +44,11 @@ const DietsHeader = (props) => {
             src={mediumVege}
             alt=""
           />
-          <p className={styles.headerContainer__link__photoContainer__dietsName}>Vege</p>
+          <p className={styles.headerContainer__link__photoContainer__dietsName}>Vegetarian</p>
         </div>
       </Link>
 
-      <Link className={styles.headerContainer__link} to="/diets/vege+fish">
+      <Link className={styles.headerContainer__link} to="/diets/vegan">
         <div className={styles.headerContainer__link__photoContainer}>
           <img
             className={styles.headerContainer__link__photoContainer__smallImg}
@@ -60,13 +60,13 @@ const DietsHeader = (props) => {
             src={mediumVegeFish}
             alt=""
           />
-          <p className={styles.headerContainer__link__photoContainer__dietsName}>Vege+Fish</p>
+          <p className={styles.headerContainer__link__photoContainer__dietsName}>Vegan</p>
         </div>
       </Link>
 
 
 
-      <Link className={styles.headerContainer__link} to="/diets/sport">
+      <Link className={styles.headerContainer__link} to="/diets/keto">
         <div className={styles.headerContainer__link__photoContainer}>
           <img
             className={styles.headerContainer__link__photoContainer__smallImg}
@@ -78,10 +78,10 @@ const DietsHeader = (props) => {
             src={mediumSport}
             alt=""
           />
-          <p className={styles.headerContainer__link__photoContainer__dietsName}>Sport</p>
+          <p className={styles.headerContainer__link__photoContainer__dietsName}>Keto</p>
         </div>
       </Link>
-      <Link className={styles.headerContainer__link} to="/diets/gluten&lactose">
+      <Link className={styles.headerContainer__link} to="/diets/low ig">
         <div className={styles.headerContainer__link__photoContainer}>
           <img
             className={styles.headerContainer__link__photoContainer__smallImg}
@@ -93,7 +93,7 @@ const DietsHeader = (props) => {
             src={mediumGlutenLactose}
             alt=""
           />
-          <p className={styles.headerContainer__link__photoContainer__dietsName}>Gluten&Lactose</p>
+          <p className={styles.headerContainer__link__photoContainer__dietsName}>Low IG</p>
         </div>
       </Link>
     </div>

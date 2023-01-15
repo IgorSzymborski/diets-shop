@@ -9,8 +9,8 @@ const ContactFooter = (props) => {
         <li className={styles.contactFooterContainer__list__item}>
           <span className={styles.bold}>Adres</span>
         </li>
-        <li className={styles.contactFooterContainer__list__item}>ul.Karola Krupińskiego 5</li>
-        <li className={styles.contactFooterContainer__list__item}>Marki</li>
+        <li className={styles.contactFooterContainer__list__item}>ul.ul.Nowaka 5</li>
+        <li className={styles.contactFooterContainer__list__item}>Warszawa</li>
       </ul>
       <ul className={styles.contactFooterContainer__list}>
         <li className={styles.contactFooterContainer__list__item}>
@@ -24,9 +24,9 @@ const ContactFooter = (props) => {
           <span className={styles.bold}>Nr konta</span>
         </li>
         <li className={styles.contactFooterContainer__list__item}>
-          69 1020 4724 0000 3602 0141 3095
+          11 1111 1111 1111 1111 1111 1111
         </li>
-        <li className={styles.contactFooterContainer__list__item}>PKO BANK</li>
+        <li className={styles.contactFooterContainer__list__item}>Bank Polski</li>
       </ul>
     </div>
   );

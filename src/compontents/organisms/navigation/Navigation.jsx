@@ -10,11 +10,9 @@ import BlackFacebook from '../../../assets/BlackFacebook.png';
 import HamburgerButton from '../../atoms/hamburgerButton/HamburgerButton';
 import { Link } from 'react-router-dom';
 
-
 const Navigation = (props) => {
   const [open, setOpen] = useState(true);
   const [colorChange, setColorChange] = useState(false);
-  
 
   const getWindowDimensions = () => {
     const { innerWidth: width, innerHeight: height } = window;
@@ -61,12 +59,6 @@ const Navigation = (props) => {
   };
   window.addEventListener('scroll', changeNavColor);
 
-
-
-
-
-
-
   return (
     <div
       className={`${styles.navigationContainer} ${
@@ -74,9 +66,10 @@ const Navigation = (props) => {
       } ${colorChange ? styles.activeNavbar : styles.navigationContainer}`}
     >
       {open && <Menu toggleMenu={toggleMenu} />}
-      <div className={styles.navigationContainer__imgWrapper}>
-        <Link to="/">
-          <img src={blackLogo} alt="" />
+      <div className={styles.navigationContainer__logoWrapper}>
+        <Link to="/" className={styles.navigationContainer__logoWrapper__linkLogo}>
+          {/* <img src={blackLogo} alt="" /> */}
+          <p className={styles.navigationContainer__logoWrapper__logo}>Logo</p>
         </Link>
         <HamburgerButton click={toggleMenu} />
       </div>

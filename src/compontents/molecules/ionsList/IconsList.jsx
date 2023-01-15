@@ -22,7 +22,7 @@ const IconsList = (props) => {
         <div className={styles.list__item__container}>
           <img className={styles.list__item__container__img} src={secondIcon} alt="" />
           <p className={styles.list__item__container__text}>
-            dostawa w <br /> godzinach <br /> 22:00-7:00
+            dostawa w <br /> godzinach <br /> 00:00-06:00
           </p>
         </div>
       </li>

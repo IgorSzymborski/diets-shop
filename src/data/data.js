@@ -6,8 +6,8 @@ import sliderPhoto3 from '../assets/sliderPhoto3.png'
 
 export const dietsDetails = [{
     id: 1,
-    name: "standard",
-    description: "Standard Doskonale wiemy jak ważna jest odpowiednia dieta i dobrze skonstruowany plan żywieniowy przy wzmożonej aktywności fizycznej i intensywnych treningach. Dlatego też dietę sport stworzyliśmy tak, by nie tylko zawierała odpowiednią kaloryke i dostarczała niezbędną ilość energii, ale również wspierała regenerację mięśni i prawidłowe funkcjonowanie organizmu. Menu opracowane przez wykwalifikowanych dietetyków, odpowiedni bilans makroskładników i wspaniały smak to przepis na sukces każdego dnia!",
+    name: "classic",
+    description: "Doskonale wiemy jak ważna jest odpowiednia dieta i dobrze skonstruowany plan żywieniowy przy wzmożonej aktywności fizycznej i intensywnych treningach. Dlatego też dietę sport stworzyliśmy tak, by nie tylko zawierała odpowiednią kaloryke i dostarczała niezbędną ilość energii, ale również wspierała regenerację mięśni i prawidłowe funkcjonowanie organizmu. Menu opracowane przez wykwalifikowanych dietetyków, odpowiedni bilans makroskładników i wspaniały smak to przepis na sukces każdego dnia!",
     firstIcon: standardIcon,
     secondIcon: standardIconn,
     photo: sliderPhoto1,
@@ -32,8 +32,8 @@ export const dietsDetails = [{
   {
     id: 2,
 
-    name: "vege",
-    description: "Vege Doskonale wiemy jak ważna jest odpowiednia dieta i dobrze skonstruowany plan żywieniowy przy wzmożonej aktywności fizycznej i intensywnych treningach. Dlatego też dietę sport stworzyliśmy tak, by nie tylko zawierała odpowiednią kaloryke i dostarczała niezbędną ilość energii, ale również wspierała regenerację mięśni i prawidłowe funkcjonowanie organizmu. Menu opracowane przez wykwalifikowanych dietetyków, odpowiedni bilans makroskładników i wspaniały smak to przepis na sukces każdego dnia!",
+    name: "vegetarian",
+    description: "Doskonale wiemy jak ważna jest odpowiednia dieta i dobrze skonstruowany plan żywieniowy przy wzmożonej aktywności fizycznej i intensywnych treningach. Dlatego też dietę sport stworzyliśmy tak, by nie tylko zawierała odpowiednią kaloryke i dostarczała niezbędną ilość energii, ale również wspierała regenerację mięśni i prawidłowe funkcjonowanie organizmu. Menu opracowane przez wykwalifikowanych dietetyków, odpowiedni bilans makroskładników i wspaniały smak to przepis na sukces każdego dnia!",
     firstIcon: standardIcon,
     secondIcon: standardIconn,
     photo: sliderPhoto2,
@@ -54,70 +54,77 @@ export const dietsDetails = [{
   {
     id: 3,
 
-    name: "vege+fish",
-    description: "VegeFish Doskonale wiemy jak ważna jest odpowiednia dieta i dobrze skonstruowany plan żywieniowy przy wzmożonej aktywności fizycznej i intensywnych treningach. Dlatego też dietę sport stworzyliśmy tak, by nie tylko zawierała odpowiednią kaloryke i dostarczała niezbędną ilość energii, ale również wspierała regenerację mięśni i prawidłowe funkcjonowanie organizmu. Menu opracowane przez wykwalifikowanych dietetyków, odpowiedni bilans makroskładników i wspaniały smak to przepis na sukces każdego dnia!",
+    name: "vegan",
+    description: "Doskonale wiemy jak ważna jest odpowiednia dieta i dobrze skonstruowany plan żywieniowy przy wzmożonej aktywności fizycznej i intensywnych treningach. Dlatego też dietę sport stworzyliśmy tak, by nie tylko zawierała odpowiednią kaloryke i dostarczała niezbędną ilość energii, ale również wspierała regenerację mięśni i prawidłowe funkcjonowanie organizmu. Menu opracowane przez wykwalifikowanych dietetyków, odpowiedni bilans makroskładników i wspaniały smak to przepis na sukces każdego dnia!",
     firstIcon: standardIcon,
     secondIcon: standardIconn,
     photo: sliderPhoto3,
     kcal: [{
       kcal: '1200',
-      pricePerDay: 39,
+      pricePerDay: 35,
     }, {
       kcal: '1500',
       pricePerDay: 39,
     }, {
       kcal: '1800',
-      pricePerDay: 39,
+      pricePerDay: 41,
     }, {
       kcal: '2000',
-      pricePerDay: 39, 
-    }, {
-      kcal: '3200',
-      pricePerDay: 39,
-    }]
+      pricePerDay: 43, 
+    }
+  ]
   },
   {
     id: 4,
 
-    name: "sport",
-    description: "Sport Doskonale wiemy jak ważna jest odpowiednia dieta i dobrze skonstruowany plan żywieniowy przy wzmożonej aktywności fizycznej i intensywnych treningach. Dlatego też dietę sport stworzyliśmy tak, by nie tylko zawierała odpowiednią kaloryke i dostarczała niezbędną ilość energii, ale również wspierała regenerację mięśni i prawidłowe funkcjonowanie organizmu. Menu opracowane przez wykwalifikowanych dietetyków, odpowiedni bilans makroskładników i wspaniały smak to przepis na sukces każdego dnia!",
+    name: "keto",
+    description: "Doskonale wiemy jak ważna jest odpowiednia dieta i dobrze skonstruowany plan żywieniowy przy wzmożonej aktywności fizycznej i intensywnych treningach. Dlatego też dietę sport stworzyliśmy tak, by nie tylko zawierała odpowiednią kaloryke i dostarczała niezbędną ilość energii, ale również wspierała regenerację mięśni i prawidłowe funkcjonowanie organizmu. Menu opracowane przez wykwalifikowanych dietetyków, odpowiedni bilans makroskładników i wspaniały smak to przepis na sukces każdego dnia!",
     firstIcon: standardIcon,
     secondIcon: standardIconn,
     photo: sliderPhoto3,
     kcal: [{
       kcal: '1200',
-      pricePerDay: 39,
+      pricePerDay: 40,
     }, {
       kcal: '1500',
-      pricePerDay: 39,
+      pricePerDay: 45,
     }, {
       kcal: '1800',
-      pricePerDay: 39,
+      pricePerDay: 50,
     }, {
       kcal: '2000',
-      pricePerDay: 39,
+      pricePerDay: 55,
+    }, {
+      kcal: '2500',
+      pricePerDay: 60,
+    }, {
+      kcal: '2800',
+      pricePerDay: 65,
     }]
   },
   {
     id: 5,
 
-    name: "gluten&lactose",
-    description: "Vege Doskonale wiemy jak ważna jest odpowiednia dieta i dobrze skonstruowany plan żywieniowy przy wzmożonej aktywności fizycznej i intensywnych treningach. Dlatego też dietę sport stworzyliśmy tak, by nie tylko zawierała odpowiednią kaloryke i dostarczała niezbędną ilość energii, ale również wspierała regenerację mięśni i prawidłowe funkcjonowanie organizmu. Menu opracowane przez wykwalifikowanych dietetyków, odpowiedni bilans makroskładników i wspaniały smak to przepis na sukces każdego dnia!",
+    name: "low&ig",
+    description: "Doskonale wiemy jak ważna jest odpowiednia dieta i dobrze skonstruowany plan żywieniowy przy wzmożonej aktywności fizycznej i intensywnych treningach. Dlatego też dietę sport stworzyliśmy tak, by nie tylko zawierała odpowiednią kaloryke i dostarczała niezbędną ilość energii, ale również wspierała regenerację mięśni i prawidłowe funkcjonowanie organizmu. Menu opracowane przez wykwalifikowanych dietetyków, odpowiedni bilans makroskładników i wspaniały smak to przepis na sukces każdego dnia!",
     firstIcon: standardIcon,
     secondIcon: standardIconn,
     photo: sliderPhoto1,
     kcal: [{
       kcal: '1200',
-      pricePerDay: 39,
+      pricePerDay: 30,
     }, {
       kcal: '1500',
-      pricePerDay: 39,
+      pricePerDay: 35,
     }, {
       kcal: '1800',
-      pricePerDay: 39,
+      pricePerDay: 37,
     }, {
       kcal: '2000',
-      pricePerDay: 39,
+      pricePerDay: 41,
+    }, {
+      kcal: '2200',
+      pricePerDay: 45,
     }]
   },
 ]

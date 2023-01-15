@@ -58,7 +58,7 @@
       }
 
       @include breakpoints (tablet) {
-        padding: 5px 180px 10px 5px;
+        padding: 5px 150px 10px 5px;
       }
     }
 
@@ -158,4 +158,12 @@
   border-radius: 30px;
   padding: 10px;
   cursor: pointer;
+  width: 100%;
+
+  @include breakpoints (mobile){
+    width: 150px;
+  }
+  @include breakpoints (tablet){
+    width: 250px;
+  }
 }

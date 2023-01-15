@@ -7,12 +7,4 @@
   border-radius: 30px;
   text-align: left;
   width: 100%;
-
-  @include breakpoints (mobile) {
-    // width: 180%;
-  }
-
-  @include breakpoints (tablet) {
-    // width: 130%;
-  }
 }

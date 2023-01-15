@@ -12,7 +12,6 @@ import DeliveryPage from '../deliveryPage/DeliveryPage';
 import PricePage from '../pricePage/PricePage';
 import ScrollToTop from '../../../ScrollToTop';
 
-
 const MainTemplate = (props) => {
   return (
     <div className={styles.mainTemplateContainer}>

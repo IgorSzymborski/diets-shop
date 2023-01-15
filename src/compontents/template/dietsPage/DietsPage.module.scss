@@ -1,9 +1,11 @@
 @import '/src/styles/mixings';
 
 .dietsContainer {
-
   background: linear-gradient(180deg, #F3E9DA 0%, #CFC0A7 100%);
   width: 100%;
+  @include breakpoints (mobile) {
+    padding-bottom: 50px;
+  }
 }
 
 .standardDietContainer {
@@ -42,7 +44,8 @@
       top: 580px;
       width: 90%;
       padding: 0;
-      margin-top: 90px;
+      margin-top: 20px;
+      // padding-bottom: 60px;
     }
 
     &__diet {

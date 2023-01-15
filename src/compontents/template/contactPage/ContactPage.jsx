@@ -28,7 +28,7 @@ const ContactPage = (props) => {
                 pon-pt
               </li>
               <li className={styles.contactContainer__infoWrapper__contactDetails__list__item}>
-                10:00-18:00
+                08:00-16:00
               </li>
             </ul>
           </div>
@@ -40,7 +40,7 @@ const ContactPage = (props) => {
             />
             <ul className={styles.contactContainer__infoWrapper__contactDetails__list}>
               <li className={styles.contactContainer__infoWrapper__contactDetails__list__item}>
-                <span className={styles.bold}>kontakt@dailycious.pl</span>
+                <span className={styles.bold}>kontakt@kontakt.pl</span>
               </li>
             </ul>
           </div>

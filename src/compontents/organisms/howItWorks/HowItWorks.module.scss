@@ -49,7 +49,6 @@
     &__item {
       &__img {
         width: 100%;
-
         @include breakpoints(laptop) {
           width: 99%;
         }

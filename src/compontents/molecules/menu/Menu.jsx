@@ -7,7 +7,7 @@ const Menu = (props) => {
   return (
     <ul className={styles.list}>
       <li className={styles.list__item}>
-        <Link className={styles.list__item__link} to="diets/standard">
+        <Link className={styles.list__item__link} to="diets/classic">
           diety
         </Link>
 

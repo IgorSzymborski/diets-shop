@@ -188,10 +188,12 @@
 }
 
 .photo {
-  @include breakpoints(laptop) {
-  }
+ 
 
   @include breakpoints(mobile) {
     width: 100%;
+  }
+ @include breakpoints(tablet) {
+    width: 95%;
   }
 }
