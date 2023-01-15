@@ -81,7 +81,7 @@ const DietsHeader = (props) => {
           <p className={styles.headerContainer__link__photoContainer__dietsName}>Keto</p>
         </div>
       </Link>
-      <Link className={styles.headerContainer__link} to="/diets/low ig">
+      <Link className={styles.headerContainer__link} to="/diets/soft">
         <div className={styles.headerContainer__link__photoContainer}>
           <img
             className={styles.headerContainer__link__photoContainer__smallImg}
@@ -93,7 +93,7 @@ const DietsHeader = (props) => {
             src={mediumGlutenLactose}
             alt=""
           />
-          <p className={styles.headerContainer__link__photoContainer__dietsName}>Low IG</p>
+          <p className={styles.headerContainer__link__photoContainer__dietsName}>Soft</p>
         </div>
       </Link>
     </div>

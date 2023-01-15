@@ -30,8 +30,8 @@ const RightSideFooter = (props) => {
           </Link>
         </li>
         <li className={styles.rightSideContainer__leftList__item}>
-          <Link className={styles.rightSideContainer__leftList__item__link} to="/diets/low&ig">
-            low&ig
+          <Link className={styles.rightSideContainer__leftList__item__link} to="/diets/soft">
+            soft
           </Link>
         </li>
       </ul>
