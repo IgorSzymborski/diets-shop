@@ -6,7 +6,7 @@ import { useState } from 'react';
 import { dietsDetails } from '../../../data/data';
 import FormFooter from '../../molecules/formFooter/FormFooter';
 
-const Form = ({}) => {
+const Form = ({ }) => {
   const [value, setValue] = useState(10);
   const [openFirstList, setOpenFirstList] = useState(false);
   const [openSecondList, setOpenSecondList] = useState(false);

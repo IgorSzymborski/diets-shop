@@ -47,7 +47,11 @@ const Navigation = (props) => {
   window.addEventListener('resize', hoverMenuOnMobile);
 
   const toggleMenu = () => {
-    setOpen((prevState) => !prevState);
+    if (width > 1000) {
+      setOpen(true);
+    } else {
+      setOpen((prevState) => !prevState);
+    }
   };
 
   const changeNavColor = () => {
@@ -65,10 +69,9 @@ const Navigation = (props) => {
         open ? styles.active : styles.navigationContainer
       } ${colorChange ? styles.activeNavbar : styles.navigationContainer}`}
     >
-      {open && <Menu toggleMenu={toggleMenu} />}
+      {open && <Menu toggleMenu={toggleMenu} onClick={toggleMenu} />}
       <div className={styles.navigationContainer__logoWrapper}>
         <Link to="/" className={styles.navigationContainer__logoWrapper__linkLogo}>
-          {/* <img src={blackLogo} alt="" /> */}
           <p className={styles.navigationContainer__logoWrapper__logo}>Logo</p>
         </Link>
         <HamburgerButton click={toggleMenu} />

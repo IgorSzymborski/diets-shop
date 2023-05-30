@@ -64,8 +64,6 @@ const DietsHeader = (props) => {
         </div>
       </Link>
 
-
-
       <Link className={styles.headerContainer__link} to="/diets/keto">
         <div className={styles.headerContainer__link__photoContainer}>
           <img
